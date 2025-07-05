@@ -43,7 +43,7 @@ int main(void) {
 
     // Search for a book by title
     const char* search_title = "Clean Code";
-    Book* found = (Book*)slist_find(book_list, (void*)search_title, book_compare_by_title);  // ✅ FIXED HERE
+    Book* found = (Book*)slist_find(book_list, (void*)search_title, book_compare_by_title);
     printf("\n Search for book '%s':\n", search_title);
     if (found) {
         book_print(found);
